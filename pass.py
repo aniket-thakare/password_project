@@ -17,7 +17,7 @@ allchar=upper+lower+specialchar
 n= int(input('\n\nEnter length of your password: '))
 password=[]
 
-def simple(n):          #------------------------------------for simple password.
+def simple(n):              #------------------------------------for simple password.
     for i in range(0,n):
         password.append(random.choice(upper+lower+num))
 def hard(n):
