@@ -1,7 +1,7 @@
 import random
 import string
 import datetime
-import os
+import os 
 
 d_date = datetime.datetime.now()
 reg_format_date = d_date.strftime("  %d-%m-%Y\t\t\t\t\t  Secure Password Generator\t\t\t\t  %I:%M:%S %p")

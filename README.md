@@ -1,0 +1,1 @@
+### This project contain password generator python script, which execute on terminal interface.
