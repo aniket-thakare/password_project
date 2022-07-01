@@ -5,15 +5,16 @@ import os
 
 d_date = datetime.datetime.now()
 reg_format_date = d_date.strftime("  %d-%m-%Y\t\t\t\t\t  Secure Password Generator\t\t\t\t  %I:%M:%S %p")
-print ('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+print ('\033[1m'+'+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 print (reg_format_date)
 print ('+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
 num=['1','2','3','4','5','6','7','8','9','0']
 upper=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 lower=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-specialchar='`~!@#$%^&*()_+-=[]{}|/;:,<.>?'
+specialchar='`~!@#$%^&*()_+-=[]|/;:,<.>?'
 specialchar=list(specialchar)
 allchar=upper+lower+specialchar
+
 n= int(input('\n\nEnter length of your password: '))
 password=[]
 
@@ -36,10 +37,10 @@ choice(n)
 password=''.join(password)
 
 if len(password)>0:
-    print(('Your generated password is:\n-->  '''+password+''))
+    print(('Your generated password is:\n\n-->  '+''+password+''))
 n=input('\n\nEnter Filename to save it: ')
 print(f'Your File Save as :{n}.txt')
 fob=open(n+'.txt','w+')
-fob.write('Your generated password is: \n\n--> ')
+fob.write('Your generated password is: \n\n-->\t\t ')
 fob.write(password)
 fob.close()
