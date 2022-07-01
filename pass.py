@@ -3,6 +3,8 @@ import string
 import datetime
 import os 
 
+#  '\033[1m'  -------> Used to make Print statement Bolder.
+
 d_date = datetime.datetime.now()
 reg_format_date = d_date.strftime("  %d-%m-%Y\t\t\t\t\t  Secure Password Generator\t\t\t\t  %I:%M:%S %p")
 print ('\033[1m'+'+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++')
